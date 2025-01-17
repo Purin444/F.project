@@ -1,6 +1,6 @@
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask import jsonify
-from models.user_model import create_user, find_user_by_username
+from backend.models.user_model import create_user, find_user_by_username
 import jwt
 import datetime
 from backend.extensions import mongo
