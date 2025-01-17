@@ -1,4 +1,4 @@
-from extensions import mongo
+from backend.extensions import mongo
 
 def create_user(username, password_hash):
     """ สร้าง User ใหม่ """
