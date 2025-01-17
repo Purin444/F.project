@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from controllers.attendance_controller import fetch_attendance_logs
+from backend.controllers.attendance_controller import fetch_attendance_logs
 
 # กำหนด Blueprint สำหรับ Attendance Routes
 attendance_bp = Blueprint('attendance', __name__, url_prefix='/api')

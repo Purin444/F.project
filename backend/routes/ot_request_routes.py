@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, request, jsonify
 from flask_cors import CORS
-from controllers.ot_request_controller import (
+from backend.controllers.ot_request_controller import (
     get_ot_requests_from_db,
     save_ot_request_to_db,
     save_accepted_ot_request_to_db,

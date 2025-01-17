@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from controllers.holiday_controller import get_holidays_from_db, save_holidays_to_db
+from backend.controllers.holiday_controller import get_holidays_from_db, save_holidays_to_db
 
 holiday_bp = Blueprint('holiday', __name__, url_prefix='/api')
 

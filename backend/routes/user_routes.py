@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from controllers.user_controller import fetch_users
+from backend.controllers.user_controller import fetch_users
 
 user_bp = Blueprint('user', __name__, url_prefix='/api')
 

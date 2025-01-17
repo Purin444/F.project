@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from controllers.salary_controller import get_users_with_salary_new, update_salary_in_new_db
+from backend.controllers.salary_controller import get_users_with_salary_new, update_salary_in_new_db
 
 salary_bp = Blueprint('salary', __name__, url_prefix='/api')
 

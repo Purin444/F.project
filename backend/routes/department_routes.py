@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from extensions import mongo
+from backend.extensions import mongo
 
 department_bp = Blueprint('department', __name__, url_prefix='/api')
 

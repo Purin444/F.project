@@ -3,7 +3,7 @@ import os
 import logging
 from flask import Blueprint, request, jsonify
 from werkzeug.security import check_password_hash, generate_password_hash
-from controllers.auth_controller import register_user, login_user, find_user_by_id, update_user_password
+from backend.controllers.auth_controller import register_user, login_user, find_user_by_id, update_user_password
 
 # กำหนด Blueprint สำหรับระบบ Login
 auth_bp = Blueprint("auth", __name__, url_prefix="/api")
