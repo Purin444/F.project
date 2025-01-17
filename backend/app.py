@@ -3,7 +3,7 @@ from flask_cors import CORS
 import logging
 import os
 from dotenv import load_dotenv  # สำหรับโหลด .env
-from extensions import mongo, cors
+from backend.extensions import mongo, cors
 from routes.holiday_routes import holiday_bp
 from routes.user_routes import user_bp
 from routes.attendance_routes import attendance_bp
