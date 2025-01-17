@@ -47,6 +47,11 @@ app.register_blueprint(accepted_ot_bp)
 def before_request_logging():
     logger.info(f"Incoming request: {request.method} {request.path}")
 
+# Root Path
+@app.route('/', methods=['GET'])
+def home():
+    return {"message": "Welcome to the Attendance App API"}, 200
+
 # Health Check
 @app.route('/health', methods=['GET'])
 def health_check():
