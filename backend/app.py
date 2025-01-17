@@ -4,14 +4,14 @@ import logging
 import os
 from dotenv import load_dotenv  # สำหรับโหลด .env
 from backend.extensions import mongo, cors
-from routes.holiday_routes import holiday_bp
-from routes.user_routes import user_bp
-from routes.attendance_routes import attendance_bp
-from routes.ot_request_routes import ot_request_bp
-from routes.auth_routes import auth_bp
-from routes.salary_routes import salary_bp
-from routes.department_routes import department_bp
-from routes.ot_request_routes import accepted_ot_bp
+from backend.routes.holiday_routes import holiday_bp
+from backend.routes.user_routes import user_bp
+from backend.routes.attendance_routes import attendance_bp
+from backend.routes.ot_request_routes import ot_request_bp
+from backend.routes.auth_routes import auth_bp
+from backend.routes.salary_routes import salary_bp
+from backend.routes.department_routes import department_bp
+from backend.routes.ot_request_routes import accepted_ot_bp
 
 # โหลดค่าจากไฟล์ .env
 load_dotenv()
