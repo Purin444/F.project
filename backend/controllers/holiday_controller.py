@@ -1,4 +1,4 @@
-from extensions import mongo
+from backend.extensions import mongo
 
 def get_holidays_from_db():
     """ ดึงข้อมูลวันหยุดจาก MongoDB """
