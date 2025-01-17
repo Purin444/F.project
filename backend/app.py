@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 import logging
 import os
@@ -50,7 +50,7 @@ def before_request_logging():
 # Root Path
 @app.route('/', methods=['GET'])
 def home():
-    return {"message": "Welcome to the Attendance App API"}, 200
+    return render_template('auth.html')
 
 # Health Check
 @app.route('/health', methods=['GET'])
