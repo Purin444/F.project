@@ -1,4 +1,4 @@
-from extensions import mongo
+from backend.extensions import mongo
 
 def update_department_in_db(user_id, department):
     """อัปเดต department ในคอลเลกชันใหม่"""

@@ -1,4 +1,4 @@
-from extensions import mongo
+from backend.extensions import mongo
 from bson import ObjectId
 
 def get_ot_requests_from_db():

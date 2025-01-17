@@ -3,7 +3,7 @@ from flask import jsonify
 from models.user_model import create_user, find_user_by_username
 import jwt
 import datetime
-from extensions import mongo
+from backend.extensions import mongo
 from bson.objectid import ObjectId  # สำหรับจัดการ ObjectId
 import logging
 

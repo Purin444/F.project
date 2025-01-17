@@ -1,5 +1,5 @@
 from zk import ZK
-from extensions import mongo
+from backend.extensions import mongo
 
 # ตั้งค่าเครื่อง ZKTeco
 zk = ZK('192.168.1.220', port=4370, timeout=5)

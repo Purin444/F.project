@@ -1,5 +1,5 @@
 from zk import ZK
-from extensions import mongo
+from backend.extensions import mongo
 
 # ฟังก์ชันสำหรับเชื่อมต่อ ZKTeco
 def connect_zk():

@@ -1,4 +1,4 @@
-from extensions import mongo
+from backend.extensions import mongo
 
 def update_salary_in_new_db(user_id, salary):
     """อัปเดต salary ในคอลเลกชันใหม่"""
